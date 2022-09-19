@@ -55,7 +55,8 @@ Pods x nodes
 - Nodes are servers that are part of a cluster with a defined or generic role.
 
 Run a pod
-`k run hello-world --image=hello-world-fastapi --image-pull-policy='Never'`
+`kubectl run hello-world --image=hello-world-fastapi --image-pull-policy='Never'`
+
 `kubectl run get-hello-world --image=get-hello-world --image-pull-policy='Never' --env BACKEND_URL="http://hello-world.default.svc.cluster.local:8000/" --dry-run=client -o yaml`
 A note about DNS names on kubernetes. 
 
